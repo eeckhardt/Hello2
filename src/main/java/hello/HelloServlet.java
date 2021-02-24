@@ -78,6 +78,12 @@ public class HelloServlet extends HttpServlet {
             case "fr":
                 msg = "Bonjour, ";
                 break;
+            case "de":
+                msg = "Hallo, ";
+                break;
+            case "all":
+                msg = "Alô, Hello, Bonjour,Hallo, ";
+                break;
         }
         
         String nome = request.getParameter("nome");
@@ -98,6 +104,9 @@ public class HelloServlet extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Servlet HelloServlet</h1>");
             out.println("<p>" + msg + "</p>");
+            out.println("<form action=\"index.html\">\n" +
+"           <input type=\"submit\" value=\"Voltar a Página Incial\"/>\n" +
+"        </form>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -132,6 +141,9 @@ public class HelloServlet extends HttpServlet {
             case "de":
                 msg = "Hallo, ";
                 break;
+            case "all":
+                msg = "Alô, Hello, Bonjour,Hallo, ";
+                break;
         }
         
         String nome = request.getParameter("nome");
@@ -152,6 +164,9 @@ public class HelloServlet extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Servlet HelloServlet</h1>");
             out.println("<p>" + msg + "</p>");
+            out.println("<form action=\"index.html\">\n" +
+"           <input type=\"submit\" value=\"Voltar a Página Incial\"/>\n" +
+"        </form>");
             out.println("</body>");
             out.println("</html>");
         }

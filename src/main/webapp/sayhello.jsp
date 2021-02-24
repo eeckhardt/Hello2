@@ -18,5 +18,11 @@
         <% String lang = request.getParameter("lang"); %>
         <jsp:setProperty name="myBean" property="msg" value="<%=lang%>"/>
         <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>!
+    <p>
+    <form action="index.html">
+                   
+            <input type="submit" value="Voltar a Página Incial"/>
+    </form>
+    </p>
     </body>
 </html>
